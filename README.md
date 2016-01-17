@@ -1,5 +1,10 @@
 # test-coffee-module@1.0.0
- [![npm version(https://badge.fury.io/js/test-coffee-module.svg)](https://npmjs.org/package/test-coffee-module)  [![build status(https://travis-ci.org/dbartholomae/test-coffee-module.svg))](https://travis-ci.org/dbartholomae/test-coffee-module)  [![coverage status(https://coveralls.io/repos/dbartholomae/test-coffee-module/badge.svg)](https://coveralls.io/github/dbartholomae/test-coffee-module)  [![dependency status(https://david-dm.org/dbartholomae/test-coffee-module.svg?theme=shields.io)](https://david-dm.org/dbartholomae/test-coffee-module)  [![devDependency status(https://david-dm.org/dbartholomae/test-coffee-module/dev-status.svg)](https://david-dm.org/dbartholomae/test-coffee-module#info=devDependencies)  [![Gitter(https://badges.gitter.im/dbartholomae/test-coffee-module.svg)](https://gitter.im/dbartholomae/test-coffee-module) 
+ [![npm version](https://badge.fury.io/js/test-coffee-module.svg)](https://npmjs.org/package/test-coffee-module)
+ [![build status](https://travis-ci.org/dbartholomae/test-coffee-module.svg))](https://travis-ci.org/dbartholomae/test-coffee-module) 
+ [![coverage status](https://coveralls.io/repos/dbartholomae/test-coffee-module/badge.svg)](https://coveralls.io/github/dbartholomae/test-coffee-module)
+ [![dependency status](https://david-dm.org/dbartholomae/test-coffee-module.svg?theme=shields.io)](https://david-dm.org/dbartholomae/test-coffee-module)
+ [![devDependency status](https://david-dm.org/dbartholomae/test-coffee-module/dev-status.svg)](https://david-dm.org/dbartholomae/test-coffee-module#info=devDependencies) 
+ [![Gitter](https://badges.gitter.im/dbartholomae/test-coffee-module.svg)](https://gitter.im/dbartholomae/test-coffee-module) 
 
 run tests on .coffee files with sensible defaults
 
