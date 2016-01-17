@@ -1,0 +1,54 @@
+{
+  "name": "test-coffee-module",
+  "version": "1.0.0",
+  "description": "run tests on .coffee files with sensible defaults",
+  "keywords": [
+    "test"
+  ],
+  "config": {
+    "readme": {
+      "addDesc": [
+        "It loads mocha with chai's expect, sinon, sinon-chai, chai-as-promised and chai-things ",
+        "and runs coverage with istanbul and coffee-coverage on option '-c'"
+      ]
+    }
+  },
+  "bin": {
+    "test-coffee-module": "bin/test-server-module.js"
+  },
+  "directories": {
+    "doc": "doc",
+    "example": "examples"
+  },
+  "dependencies": {
+    "bluebird": "^3.1.1",
+    "chai": "3.4.1",
+    "chai-as-promised": "5.2.0",
+    "chai-things": "0.2.0",
+    "coffee-coverage": "^1.0.0",
+    "coffee-script": "^1.10.0",
+    "istanbul": "0.4.2",
+    "mocha": "2.3.4",
+    "sinon": "1.17.2",
+    "sinon-chai": "2.8.0",
+    "commander": "^2.9.0",
+    "winston": "^2.1.1"
+  },
+  "devDependencies": {
+    "codo": "git://github.com/dbartholomae/codo.git"
+  },
+  "scripts": {
+    "test": "node ./bin/test-server-module.js --debug"
+  },
+  "main": "src/run.coffee",
+  "author": "Daniel Bartholomae <db@wappforge.com> (http://www.wappforge.com/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbartholomae/test-coffee-module.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dbartholomae/test-coffee-module/issues"
+  },
+  "homepage": "https://github.com/dbartholomae/test-coffee-module#readme"
+}
