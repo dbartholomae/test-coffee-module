@@ -1,4 +1,4 @@
-# test-coffee-module@1.0.0
+# test-coffee-module@1.0.1
  [![npm version](https://badge.fury.io/js/test-coffee-module.svg)](https://npmjs.org/package/test-coffee-module)
  [![build status](https://travis-ci.org/dbartholomae/test-coffee-module.svg)](https://travis-ci.org/dbartholomae/test-coffee-module) 
  [![coverage status](https://coveralls.io/repos/dbartholomae/test-coffee-module/badge.svg)](https://coveralls.io/github/dbartholomae/test-coffee-module)
