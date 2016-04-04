@@ -12,7 +12,7 @@ module.exports = class PrepareTest
       coverageFile = 'coverage/coverage-coffee.json'
 
       Report = istanbul.Report
-      report = Report.create 'html', { dir: 'coverage/html-report' }
+      report = Report.create 'lcov', { dir: 'coverage' }
       Collector = istanbul.Collector
       collector = new Collector()
 
