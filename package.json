@@ -1,6 +1,6 @@
 {
   "name": "test-coffee-module",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "run tests on .coffee files with sensible defaults",
   "keywords": [
     "test"
