@@ -38,7 +38,8 @@
     "codo": "git://github.com/dbartholomae/codo.git"
   },
   "scripts": {
-    "test": "node ./bin/test-server-module.js --debug -c"
+    "test": "node ./bin/test-server-module.js --debug -c",
+    "build": "codo src && create-readme"
   },
   "main": "src/run.coffee",
   "author": "Daniel Bartholomae <db@wappforge.com> (http://www.wappforge.com/)",
