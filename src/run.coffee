@@ -42,7 +42,7 @@ module.exports = class TestRunner
     return testPromise
 
   # Run test files based on command line arguments.
-  # Test files will default ['src/**/*.[sS]pec.coffee'] if empty
+  # Test files will default ['src/**.[sS]pec.coffee'] if empty
   # Available flags are "-c"/"--coverage" and "-d"/"--debug"
   # @overload run(args, cb)
   #   @param args [Array] The arguments to the script
