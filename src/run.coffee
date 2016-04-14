@@ -9,7 +9,7 @@ module.exports = class TestRunner
   # @param (options) [Object] Options
   # @option options coverage [Boolean] Whether to create coverage report [false]
   # @option options debug [Boolean] Whether to output debug information [false]
-  constructor: (options) ->
+  constructor: (options = {}) ->
     @options =
       coverage: options.coverage?
       debug: options.debug?
