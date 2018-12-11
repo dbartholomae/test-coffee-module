@@ -1,6 +1,7 @@
 Promise = require 'bluebird'
 program = require 'commander'
-winston = require 'winston'
+debugFactory = require('debug')
+debug = debugFactory('test-coffee-module')
 
 # Bundles mocha, chai, sinon, sinon-chai, chai-things, chai-as-promised, istanbul and
 # coffee-coverage into one command.
@@ -15,7 +16,7 @@ module.exports = class TestRunner
       debug: options.debug?
 
     if @options.debug
-      winston.level = 'debug'
+      debugFactory.enable('test-coffee-module')
 
   # Run tests from a set of files
   # @param files [Array<String>] Test files or globs for test files
@@ -26,17 +27,17 @@ module.exports = class TestRunner
       testSteps = ['prepare-coverage'].concat testSteps.concat ['write-coverage', 'create-report']
 
     testPromise = Promise.resolve files
-    winston.debug 'Running steps ' + testSteps + ' on files ' + files
+    debug 'Running steps ' + testSteps + ' on files ' + files
     for stepName in testSteps
-      do (stepName) ->
-        testPromise = testPromise.then (files) ->
+      do (stepName) =>
+        testPromise = testPromise.then (files) =>
           Step = require './steps/' + stepName
           step = new Step()
-          winston.debug "Running step " + stepName
+          debug "Running step " + stepName
           step.run(files)
 
-    testPromise.catch (err) ->
-      winston.debug err
+    testPromise.catch (err) =>
+      debug err
       throw err
 
     return testPromise
