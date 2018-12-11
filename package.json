@@ -34,12 +34,8 @@
     "commander": "^2.9.0",
     "winston": "^2.1.1"
   },
-  "devDependencies": {
-    "codo": "git://github.com/dbartholomae/codo.git"
-  },
   "scripts": {
-    "test": "node ./bin/test-server-module.js --debug -c",
-    "build": "codo src && create-readme"
+    "test": "node ./bin/test-server-module.js --debug -c"
   },
   "main": "src/run.coffee",
   "author": "Daniel Bartholomae <db@wappforge.com> (http://www.wappforge.com/)",
