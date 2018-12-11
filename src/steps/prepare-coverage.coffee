@@ -6,7 +6,7 @@ module.exports = class PrepareCoverage
   # @param args [Promise<Array>] The arguments to the script
   # @return [Promise] The arguments to the script
   run: (args) ->
-    coverageVar = coffeeCoverage.findIstanbulVariable()
+    coverageVar = coffeeCoverage.findIstanbulVariable() ? "_$coffeeIstanbul"
     coffeeCoverage.register
       instrumentor: 'istanbul'
       basePath: process.cwd()
